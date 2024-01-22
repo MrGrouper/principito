@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
-import Convert from './components/Convert'
-import LoadBook from './components/Load'
+import Convert from './components/Convert.jsx'
+import LoadBook from './components/Load.jsx'
 
 
 function App() {

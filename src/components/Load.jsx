@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ReactReader } from "react-reader";
-import Convert from './Convert'
+import Convert from './Convert.jsx'
 
 
 function LoadBook({ handleClick }) {
