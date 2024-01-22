@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import Convert from './components/Convert.jsx'
-import LoadBook from './components/Load.jsx'
+import LoadBook from './components/Load'
 
 
 function App() {
@@ -20,8 +20,7 @@ function App() {
       language={language}
       />
     <div>
-      <LoadBook
-      onClick={test} />
+      <LoadBook/>
     </div>
     </div>
   )

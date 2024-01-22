@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ReactReader } from "react-reader";
-import Convert from './Convert.jsx'
+import Convert from './Convert'
 
 
 function LoadBook({ handleClick }) {
@@ -43,7 +43,7 @@ function LoadBook({ handleClick }) {
         />
       </div>
       <ReactReader
-        url="../books/Platero.epub"
+        url="../books/alice.epub"
         epubInitOptions={{
           openAs: "epub",
         }}
