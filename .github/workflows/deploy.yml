@@ -28,10 +28,9 @@ jobs:
           VITE_REACT_APP_API_KEY: ${{ secrets.VITE_REACT_APP_API_KEY }}
 
       - name: Debug Environment Variable
-        run: |
-          env
-          echo "VITE_REACT_APP_API_KEY=${VITE_REACT_APP_API_KEY}"
-
+        run:
+          echo "VITE_REACT_APP_API_KEY = env.VITE_REACT_APP_API_KEY"
+          
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
