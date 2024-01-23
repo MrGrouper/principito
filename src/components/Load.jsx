@@ -72,7 +72,7 @@ function LoadBook({ handleClick }) {
         />
       </div>
       <div className="translation" style={translationStyle}>
-        <Convert text={selections.text} language="en" />
+        <Convert text={selections.text} language="es" />
       </div>
     </div>
   );
