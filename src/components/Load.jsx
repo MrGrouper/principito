@@ -13,7 +13,6 @@ function LoadBook({ handleClick }) {
 
   const epubFilePath = import.meta.env.BASE_URL + "/books/alice.epub";
 
-  console.log(epubFilePath);
 
   const translationStyle = {
     padding: "5px",

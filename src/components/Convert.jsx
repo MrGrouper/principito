@@ -7,9 +7,8 @@ const Convert = ({ text, language }) => {
 
   const apiKey = import.meta.env.VITE_REACT_APP_API_KEY
 
+  if (apiKey){console.log('api key exists')}
 
-  
-  
   
   useEffect(() => {
     const response = axios
