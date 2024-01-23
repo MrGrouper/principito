@@ -30,7 +30,7 @@ jobs:
       - name: Debug Environment Variable
         run: |
           
-          echo "VITE_REACT_APP_API_KEY = ${secrets.VITE_REACT_APP_API_KEY}"
+          echo "VITE_REACT_APP_API_KEY = ::add_mask::$VITE_REACT_APP_API_KEY"
           
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
