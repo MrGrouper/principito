@@ -15,13 +15,7 @@ function App() {
   return (
     
     <div>
-      <Convert
-      text = {text}
-      language={language}
-      />
-    <div>
       <LoadBook/>
-    </div>
     </div>
   )
   }

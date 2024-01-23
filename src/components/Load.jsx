@@ -12,6 +12,14 @@ function LoadBook({ handleClick }) {
     setLocation(epubcifi);
   };
 
+  const translationStyle = {
+    padding: "5px",
+    border: "solid",
+    borderRadius: '5px',
+    textAlign: "center",
+
+  }
+
   useEffect(() => {
     if (rendition) {
       function setRenderSelection(cfiRange, contents) {
@@ -29,19 +37,13 @@ function LoadBook({ handleClick }) {
     }   
     
   }, [setSelections, rendition]);
-  
+
 
 
 
   return (
-    <div style={{ height: "100vh" }}>
-      <div className="border border-stone-400 bg-white min-h-[100px] p-2 rounded">
-        <h2 className="font-bold mb-1">Selections</h2>
-        <Convert
-        text = {selections.text}
-        language = 'en'
-        />
-      </div>
+    <div>
+      <div className = "book" style={{ height: "90vh" }}>
       <ReactReader
         url="../books/alice.epub"
         epubInitOptions={{
@@ -53,6 +55,13 @@ function LoadBook({ handleClick }) {
           setRendition(_rendition);
         }}
       />
+    </div>
+    <div className="translation" style={translationStyle}>
+        <Convert
+        text = {selections.text}
+        language = 'en'
+        />
+      </div>
     </div>
   );
 }
