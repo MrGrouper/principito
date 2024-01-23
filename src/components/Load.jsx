@@ -12,6 +12,12 @@ function LoadBook({ handleClick }) {
     setLocation(epubcifi);
   };
 
+
+
+  const epubFilePath = import.meta.env.BASE_URL + "/books/alice.epub"
+
+  console.log(epubFilePath)
+
   const translationStyle = {
     padding: "5px",
     border: "solid",
@@ -45,7 +51,7 @@ function LoadBook({ handleClick }) {
     <div>
       <div className = "book" style={{ height: "90vh" }}>
       <ReactReader
-        url="../books/alice.epub"
+        url = {epubFilePath}
         epubInitOptions={{
           openAs: "epub",
         }}
