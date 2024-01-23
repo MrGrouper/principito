@@ -5,7 +5,7 @@ import LoadBook from './components/Load'
 
 function App() {
   
-  console.log('hei')
+
   const [text, setUsername] = useState('hello world')
   const [language, setLanguage] = useState('es')
   const input = useRef(null)
