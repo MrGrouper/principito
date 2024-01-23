@@ -23,7 +23,7 @@ function LoadBook({ handleClick }) {
 
   useEffect(() => {
     if (rendition) {
-      function setRenderSelection(cfiRange, contents) {
+      function setRenderSelection(cfiRange) {
         if (rendition) {
           setSelections({
             text: rendition.getRange(cfiRange).toString(),
